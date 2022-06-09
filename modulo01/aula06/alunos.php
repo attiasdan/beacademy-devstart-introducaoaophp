@@ -2,10 +2,10 @@
 
 $alunos = [
     [
-        'Chiquim',
-        'chiquim@email.com',
-        '85 9 8889-0000',
-        [
+        'nome' => 'Chiquim',
+        'email' => 'chiquim@email.com',
+        'telefone' => '85 9 8889-0000',
+        'notas' => [
             9,
             8.5,
             7.5,
@@ -13,10 +13,10 @@ $alunos = [
         ]
     ],
     [
-        'Maria',
-        'maria@email.com',
-        '85 9 8459-0000',
-        [
+        'nome' => 'Maria',
+        'email' => 'maria@email.com',
+        'telefone' => '85 9 8459-0000',
+        'notas' => [
             8,
             8.5,
             7.5,
