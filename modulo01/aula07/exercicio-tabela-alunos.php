@@ -27,7 +27,6 @@ $alunos = [
     $a2,
 ];
 
-//var_dump($alunos);
 ?>
 
 <!-- CSS only -->
