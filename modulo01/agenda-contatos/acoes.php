@@ -38,3 +38,21 @@ function erro404() {
 function relatorio() {
     include 'telas/relatorio.php';
 }
+function excluir() {
+    $id = $_GET['id'];
+
+    $contatos = file('dados/contatos.csv');
+
+    unset($contatos[$id]);
+
+    unlink('dados/contatos.csv');
+
+    $arquivo = fopen('dados/contatos.csv', 'a+');
+
+    foreach ($contatos as $cadaContato) {
+        fwrite($arquivo, $cadaContato);
+    }
+
+    $mensagem = "Pronto, contato excluído";
+    include 'telas/mensagem.php';
+}

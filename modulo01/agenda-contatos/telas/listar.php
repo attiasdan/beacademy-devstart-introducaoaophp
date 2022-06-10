@@ -12,7 +12,7 @@
     <tbody>
         
         <?php
-            foreach($contatos as $cadaContato)
+            foreach($contatos as $posicao => $cadaContato)
             {
                 $partes = explode(';', $cadaContato); 
 
@@ -21,9 +21,16 @@
                     echo '<td>' . $partes[1] . '</td>';
                     echo '<td>' . $partes[2] . '</td>';
                     echo '<td>
-
-                        <a href="#" class="btn btn-danger btn-sm">Excluir</a> 
-
+                    <a
+                        href="/excluir?id=' . $posicao . '"
+                        class="btn btn-danger btn-sm">
+                        Excluir
+                    </a>
+                    <a
+                        href="/editar?id=' . $posicao . '"
+                        class="btn btn-warning btn-sm">
+                        Excluir
+                    </a> 
                     </td>';
                 echo '</tr>';
             }
