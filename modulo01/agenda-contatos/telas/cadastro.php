@@ -1,9 +1,17 @@
-<h1>Cadastro</h1>
+<h1>Novo Contato</h1>
+
 <hr>
-<form action="">
-    <input class="form-control mb-3" type="text" name="" id="" placeholder="Nome">
-    <input class="form-control mb-3" type="text" name="" id="" placeholder="Email">
-    <input class="form-control mb-3" type="password" name="" id="" placeholder="Senha">
-    <input class="form-control mb-3" type="password" name="" id="" placeholder="Confirmar Senha">
-    <button class="btn btn-primary">Enviar</button>
+
+<form action="" method="post">
+
+    <input class="form-control mb-3" type="text" name="nome" id="" placeholder="Nome">
+
+    <input class="form-control mb-3" type="text" name="email" id="" placeholder="E-mail">
+
+    <input class="form-control mb-3" type="text" name="telefone" id="" placeholder="Telefone">
+
+    <button class="btn btn-primary">
+        Enviar
+    </button>
+
 </form>

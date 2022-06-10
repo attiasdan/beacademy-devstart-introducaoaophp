@@ -6,6 +6,7 @@
             <th>Nome</th>
             <th>E-mail</th>
             <th>Telefone</th>
+            <th>Ações</th>
         </tr>
     </thead>
     <tbody>
@@ -15,11 +16,16 @@
             {
                 $partes = explode(';', $cadaContato); 
 
-                echo "<tr>";
-                    echo "<td>" . $partes[0] . "</td>";
-                    echo "<td>" . $partes[1] . "</td>";
-                    echo "<td>" . $partes[2] . "</td>";
-                echo "</tr>";
+                echo '<tr>';
+                    echo '<td>' . $partes[0] . '</td>';
+                    echo '<td>' . $partes[1] . '</td>';
+                    echo '<td>' . $partes[2] . '</td>';
+                    echo '<td>
+
+                        <a href="#" class="btn btn-danger btn-sm">Excluir</a> 
+
+                    </td>';
+                echo '</tr>';
             }
         ?>
     </tbody>
