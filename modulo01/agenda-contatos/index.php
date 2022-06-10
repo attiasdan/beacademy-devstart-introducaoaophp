@@ -12,6 +12,7 @@ match($url[0]) {
     '/listar' => listar(),
     '/relatorio' => relatorio(),
     '/excluir' => excluir(),
+    '/editar' => editar(),
     default => erro404(),
 };
 

@@ -29,7 +29,7 @@
                     <a
                         href="/editar?id=' . $posicao . '"
                         class="btn btn-warning btn-sm">
-                        Excluir
+                        Editar
                     </a> 
                     </td>';
                 echo '</tr>';
